@@ -1,0 +1,4 @@
+name: TestPlugin
+version: '${project.version}'
+main: org.michael.test.TestPlugin
+api-version: '1.20'
