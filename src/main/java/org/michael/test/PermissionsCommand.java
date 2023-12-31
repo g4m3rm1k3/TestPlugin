@@ -12,7 +12,7 @@ public class PermissionsCommand implements CommandExecutor {
 
         if(commandSender instanceof Player){
             Player player = (Player) commandSender;
-            if(player.hasPermission("testplugin.use")){
+            if(player.hasPermission("testPlugin.use")){
                 player.sendMessage(ChatColor.GREEN + "You have permission to use this");
             }else{
                 player.sendMessage(ChatColor.RED +  "you don't have permission to use this");
