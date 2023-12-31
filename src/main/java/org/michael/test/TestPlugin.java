@@ -13,6 +13,7 @@ public final class TestPlugin extends JavaPlugin implements Listener
 
     @Override
     public void onEnable() {
+        getCommand("ask").setExecutor(new PermissionsCommand());
         getConfig().options().copyDefaults();
         saveDefaultConfig();
         getCommand("config").setExecutor(new ConfigCommand(this));

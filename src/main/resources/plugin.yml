@@ -11,3 +11,5 @@ commands:
     description: test command
   config:
     description: config command
+  ask:
+    description: permission command
