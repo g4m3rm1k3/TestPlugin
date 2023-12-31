@@ -14,18 +14,9 @@ public final class TestPlugin extends JavaPlugin implements Listener
     @Override
     public void onEnable() {
         // Plugin startup logic
-        Bukkit.getPluginManager().registerEvents(this, this);
+        getCommand("heal").setExecutor(new HealCommand());
 
 
-    }
-    @EventHandler
-    public void onPlayerMove(PlayerMoveEvent e){
-        e.setCancelled(true);
-        e.getPlayer().sendMessage(ChatColor.RED + "Stop moving! You are frozen");
-    }
 
-    @EventHandler
-    public void onPlayerEggThrow(PlayerEggThrowEvent e){
-        e.getPlayer().sendMessage("You just threw an egg!");
     }
 }

@@ -2,3 +2,8 @@ name: TestPlugin
 version: '${project.version}'
 main: org.michael.test.TestPlugin
 api-version: '1.20'
+authors: [Michael]
+description: Cool test plugin
+commands:
+  heal:
+    description: heal command
