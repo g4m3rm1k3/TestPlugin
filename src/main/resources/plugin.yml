@@ -7,3 +7,7 @@ description: Cool test plugin
 commands:
   heal:
     description: heal command
+  test:
+    description: test command
+  config:
+    description: config command

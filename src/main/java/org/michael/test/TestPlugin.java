@@ -13,8 +13,12 @@ public final class TestPlugin extends JavaPlugin implements Listener
 
     @Override
     public void onEnable() {
+        getConfig().options().copyDefaults();
+        saveDefaultConfig();
+        getCommand("config").setExecutor(new ConfigCommand(this));
         // Plugin startup logic
         getCommand("heal").setExecutor(new HealCommand());
+        getCommand("test").setExecutor(new TestCommand());
 
 
 
